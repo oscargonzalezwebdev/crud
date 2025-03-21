@@ -1,1 +1,6 @@
-<p>usuario-card works!</p>
+<div class="card p-4 h-100">
+    <figure class="figureCard">
+        <img class="img-fluid rounded-circle imgCard" [src]="miUsuario.image" [alt]="miUsuario.first_name">
+    </figure>
+    <h4>{{miUsuario.first_name + " " + miUsuario.last_name}}</h4>
+</div>

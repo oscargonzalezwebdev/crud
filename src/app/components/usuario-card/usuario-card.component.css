@@ -1,0 +1,14 @@
+.figureCard{
+    text-align: center;
+    &:hover img{
+        transform: scale(1.1) translateY(-10px);
+    }
+}
+
+.imgCard{
+    width: 50%;
+}
+
+h4{
+    text-align: center;
+}
