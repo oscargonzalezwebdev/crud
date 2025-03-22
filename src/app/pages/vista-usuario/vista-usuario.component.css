@@ -1,0 +1,5 @@
+@media (min-width: 768px) {
+    .divImg {
+      border-right: 2px solid black;
+    }
+  }

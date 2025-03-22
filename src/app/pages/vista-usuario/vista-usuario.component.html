@@ -1,1 +1,18 @@
-<p>vista-usuario works!</p>
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-6 text-center p-4 divImg">
+        <img [src]="elUsuario.image" class="img-fluid rounded-circle mb-3" alt="Foto del usuario">
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 p-4">
+        <h3 class="mt-4">{{elUsuario.first_name}}</h3>
+        <h3 class="mt-4">{{elUsuario.last_name}}</h3>
+        <p class="mt-4"><strong>Nombre Usuario:</strong> {{elUsuario.username}}</p>
+        <p><strong>Email:</strong> {{elUsuario.email}}</p>
+        <div class="btn-group mt-4" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-lg btn-outline-dark p-3">Eliminar</button>
+            <button type="button" class="btn btn-lg btn-outline-dark">Actualizar</button>
+            <button type="button" class="btn btn-lg btn-outline-dark">Volver a listado</button>
+        </div>
+      </div>
+    </div>
+  </div>

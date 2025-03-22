@@ -1,6 +1,7 @@
-<div class="card p-4 h-100">
+<div class="card p-4 h-100" [routerLink]="['/usuario', miUsuario._id]">
     <figure class="figureCard">
         <img class="img-fluid rounded-circle imgCard" [src]="miUsuario.image" [alt]="miUsuario.first_name">
     </figure>
     <h4>{{miUsuario.first_name + " " + miUsuario.last_name}}</h4>
+    
 </div>

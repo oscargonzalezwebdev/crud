@@ -12,3 +12,7 @@
 h4{
     text-align: center;
 }
+
+.card{
+    cursor: pointer;
+}
