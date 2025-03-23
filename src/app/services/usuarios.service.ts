@@ -20,6 +20,16 @@ export class UsuariosService {
     const url = `${this.baseUrl}/${_id}`;
     return this.httpClient.get<IUser>(url);
   }
+
+  // delete(_id: string): Observable<IUser> {
+  //   const url = `${this.baseUrl}/${_id}`;
+  //   return this.httpClient.delete<IUser>(url);
+  // }
+  
+  delete(id: string): Promise<IUser> {
+    const url = `${this.baseUrl}/${id}`;
+    return lastValueFrom(this.httpClient.delete<IUser>(url));
+  }
   
   constructor() { }
 }

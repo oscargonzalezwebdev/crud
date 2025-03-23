@@ -9,9 +9,9 @@
         <p class="mt-4"><strong>Nombre Usuario:</strong> {{elUsuario.username}}</p>
         <p><strong>Email:</strong> {{elUsuario.email}}</p>
         <div class="btn-group mt-4" role="group" aria-label="Basic outlined example">
-            <button type="button" class="btn btn-lg btn-outline-dark p-3">Eliminar</button>
-            <button type="button" class="btn btn-lg btn-outline-dark">Actualizar</button>
-            <button type="button" class="btn btn-lg btn-outline-dark">Volver a listado</button>
+            <button type="button" class="btn btn-lg btn-outline-dark p-3" (click)="borrarUsuario(elUsuario._id)">Eliminar</button>
+            <button type="button" class="btn btn-lg btn-outline-dark" [routerLink]="['/actualizarusuario', elUsuario._id]">Actualizar</button>
+            <button type="button" class="btn btn-lg btn-outline-dark" [routerLink]="['/home']">Volver a listado</button>
         </div>
       </div>
     </div>
